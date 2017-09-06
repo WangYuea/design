@@ -1,0 +1,150 @@
+﻿.experience .experience-top{
+    height:695px;
+    background:url(../images/experience.jpg) no-repeat;
+    padding-left:250px;
+}
+.experience .experience-top div{
+    height:50px;
+    width:140px;
+    float:left;
+    padding-top:506px;
+}
+.experience .experience-top div span:first-child{
+    width:45px;
+    height:30px;
+    display:block;
+    border-bottom:1px solid #ccc;
+    line-height:30px;
+    color:#000;
+    font-weight:bold;
+    transition:all 1s;
+}
+    .experience .experience-top div span:first-child:hover {
+        color:#ff6a00;
+        transform:translateX(10px)
+    }
+.experience .experience-top div span:last-child{
+    font-family:AngsanaUPC;
+    display:block;
+    padding-top:5px;
+   transition:all 1s;
+}
+.experience .experience-top div span:last-child:hover{
+    transform:translateX(10px) scale(1.1);
+}
+.exp-bottom{
+    background:#fafafa;
+    position:relative;
+}
+.exp-bottom .exp-bottom-line{
+    position:absolute;
+    height:1141px;
+}
+.exp-bottom .exp-bottom-line .exp-line{
+    width:41px;
+    height:1441px;
+    background:url(../images/exp-line.jpg) no-repeat;
+    position:absolute;
+    left:766px;
+    top:0;
+}
+.exp-bottom .exp-bottom-line span{
+    position:absolute;
+    width:265px;
+    height:20px;
+    display:block;
+    /*z-index:20;*/
+    cursor:pointer;
+    background:url(../images/exp-liner.png) no-repeat;
+    /*transition:all 1s;*/
+}
+    /*.exp-bottom .exp-bottom-line span:hover {
+        transform:rotateX(180deg);
+    }*/
+.exp-bottom .exp-bottom-line .exp-line-1{
+    top:180px;
+    left:570px;
+}
+
+.exp-bottom .exp-bottom-line .exp-line-2{
+    top:520px;
+    left:725px;
+}
+.exp-bottom .exp-bottom-line .exp-line-3{
+    top:855px;
+    left:570px;
+}
+.exp-bottom .exp-bottom-line .exp-line-4{
+    top:1196px;
+    left:725px;
+}
+.exp-bottom .exp-con{
+ padding-bottom:5px;
+}
+.exp-bottom .exp-con li{
+    width:730px;
+    height:230px;
+    margin-bottom:110px;
+}
+.exp-bottom .exp-con .exp-con-1{
+    margin-left:545px;
+        margin-top:80px;
+}
+.exp-bottom .exp-con .exp-con-2{
+    margin-left:290px;
+}
+.exp-bottom .exp-con .exp-con-3{
+    margin-left:545px;
+
+}
+.exp-bottom .exp-con .exp-con-4{
+    margin-left:290px;
+
+}
+.exp-bottom .exp-con li .exp-con-fl{
+    width:185px;
+    height:185px;
+        border-radius:50%;
+   background:url(../images/pro-cen-1.jpg) no-repeat;
+}
+.exp-bottom .exp-con li .exp-con-fl span{
+      width:100%;
+      height:100%;
+    text-align:center;
+    line-height:150px;   
+    border-radius:50%;
+    display:block;
+    font-size:36px;
+    cursor:pointer;
+     background:rgba(255,255,255,.5);
+     transition:all 1s;
+}
+    .exp-bottom .exp-con li .exp-con-fl span:hover {
+        background:rgba(255,255,255,0);
+        color:#ff6a00;
+        transform:translateY(10px) rotateY(360deg);
+    }
+  
+.exp-bottom .exp-con li .exp-con-fr{
+    width:404px;
+    height:200px;
+        border-radius:10px;
+   background:url(../images/pro-cen-3.jpg) no-repeat;
+}
+.exp-bottom .exp-con li .exp-con-fr p{
+     width:100%;
+      height:100%;
+      color:#000;
+      padding:30px;
+      line-height:28px;
+    border-radius:10px;
+     background:rgba(255,255,255,.5);
+     transition:all 1s;
+     cursor:pointer;
+}
+.exp-bottom .exp-con li .exp-con-fr p:hover{
+    background:rgba(0,0,0,.5);
+    color:#fff;
+    transform:rotateY(360deg);
+}
+

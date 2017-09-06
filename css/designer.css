@@ -1,0 +1,312 @@
+﻿/*导航样式base.css*/
+/*介绍*/
+.brief{
+    height:618px;
+    background:url(../images/sjs.jpg) no-repeat;
+    overflow:hidden;
+}
+.brief h3{
+      font-size:24px;
+    line-height:100px;
+    height:100px;
+    color:#001681;
+    text-align:center;
+    padding-left:100px;
+}
+.brief .bri-img{
+    width:480px;
+    height:480px;
+    background:blue;
+    transform:rotate(38deg);
+    margin-left:230px;
+    margin-top:-30px;
+    overflow:hidden;
+}
+.brief .bri-img img{
+     transform:rotate(-38deg);
+     transform-origin: left 556px;
+}
+
+.brief .bri-text{
+    width:435px;
+    line-height:30px;
+    margin-top: -350px;
+    margin-right: 75px;
+    text-indent:2em;
+}
+
+/*follow me*/
+.follow h3{
+    height:80px;
+    margin-top:10px;
+    margin-bottom:5px;
+    background:url(../images/bg-d.png) repeat-x;
+    text-align:center;
+}
+.follow h3 span{
+    line-height:80px;
+    background:#fff;
+    padding:0 38px;
+    font-size:24px;
+    color:#001681;
+}
+.follow .follow-top{
+    height:380px;
+    background:url(../images/follow.jpg) no-repeat;
+}
+.follow .follow-top ul{
+    width:345px;
+   float:right;
+   margin-top:10px;
+}
+.follow .follow-top ul li{
+    height:50px;
+    margin-bottom:35px;
+    line-height:50px;
+    cursor:pointer;
+}
+.follow .follow-top ul li:hover{
+    color:#001681;
+}
+.follow .follow-top ul li span{
+    width:45px;
+    display:block;
+    height:45px;
+    border-radius:50%;
+    background:#323045;
+    color:#fff;
+    float:left;
+    text-align:center;line-height:45px;
+}
+.follow .follow-top ul li span:hover{
+    color:#ffd800;
+}
+.follow .follow-top ul li p{
+    display:block;
+    line-height:50px;
+    padding-left:25px;
+    float:left;
+}
+.follow .follow-bottom{
+    height:365px;
+    padding-left:32px;
+}
+.follow .follow-bottom h4{
+    font-size:24px;
+    color:#404040;
+    height:75px;
+    margin-top:38px;
+}
+.follow .follow-bottom .follow-bottom-text{
+    width:885px;
+    line-height:30px;
+    margin-top:10px;
+}
+.follow .follow-bottom .follow-bottom-text p::first-letter{
+    font-size:30px;
+    vertical-align:top;
+}
+.follow .follow-bottom .follow-bottom-text a{
+    display:block;
+    width:70px;
+    height:35px;
+    text-align:center;
+    border:4px double #818181;
+    margin-top:15px;
+    transition:all .5s;
+}
+.follow .follow-bottom .follow-bottom-text a:hover{
+    border-color:#001681;
+    color:#001681;
+}
+.follow .follow-bottom .follow-bottom-img{
+    width:388px;
+    height:290px;
+    margin-right:35px;
+        position:relative;
+        overflow:hidden;
+}
+.follow .follow-bottom .follow-bottom-img .f-img{
+    width:100%;
+    height:100%;
+    display:block;
+     background:url(../images/des-f.jpg) no-repeat;
+}
+.follow .follow-bottom .follow-bottom-img  .f-dots{
+    width:65px;
+    display:block;
+    background:rgba(0,0,0,.5);
+    color:#fff;
+    text-align:center;
+    line-height:65px;
+    font-size:50px;
+    height:65px;
+   border-radius:50%;
+   position:absolute;
+   left:50%;
+   margin-left:-30px;
+   top:50%;
+   margin-top:-50px;
+   transform:scale(0);
+   transition:all 0.5s;
+}
+.follow .follow-bottom .follow-bottom-img  .f-dots:hover{
+    color:#ffd800;
+}
+.follow .follow-bottom .follow-bottom-img:hover .f-dots{
+    transform:scale(1);
+}
+.follow .follow-bottom .follow-bottom-img  p{
+    height:75px;
+    background:rgba(0,0,0,.5);
+    padding:5px 15px;
+    line-height:30px;
+    color:#fff;
+    position:absolute;
+    bottom:0;
+    left:0;
+    text-align:center;
+    transform:translateY(100%);
+    transition:all 0.5s 0.5s
+}
+    .follow .follow-bottom .follow-bottom-img:hover p {
+        transform:none;
+    }
+/*联系*/
+.contact{
+    width:100%;
+    height:640px;
+    background:#f9f9f9;
+    overflow:hidden;
+}
+.contact h3{
+    height:80px;
+    margin-top:10px;
+    margin-bottom:5px;
+    background:url(../images/bg-d.png) repeat-x;
+    text-align:center;
+}
+.contact h3 span{
+    line-height:80px;
+    background:#f9f9f9;
+    padding:0 36px;
+    font-size:24px;
+    color:#001681;
+}
+.contact .contact-fl{
+    margin-left:84px;
+    width:820px;
+    margin-right:48px;
+}
+.contact .contact-fl h4{
+    height:51px;
+    line-height:51px;
+    font-size:20px;
+     border-bottom:1px solid #e8e8e8;
+    margin-bottom:25px;
+}
+.contact .contact-fl .contact-fl-text{
+    line-height:24px;
+    margin-bottom:25px;
+}
+.contact .contact-fl .contact-input{
+    width:100%;
+}
+.contact .contact-fl .contact-input .inputs{
+    width:256px;
+    height:70px;
+    float:left;
+    margin-right:16px;
+}
+.contact .contact-fl .contact-input .inputs p{
+    padding-left:10px;
+    line-height:30px;
+}
+.contact .contact-fl .contact-input .inputs  input{
+    width:244px;
+    border:1px solid #b7b7b7;
+    height:30px;
+    padding-left:10px;
+}
+.contact .contact-fl .contact-input .inputs-text{
+    width:390px;
+    height:70px;
+    float:left;
+    margin-right:16px;
+}
+.contact .contact-fl .contact-input .inputs-text p{
+    padding-left:10px;
+    line-height:30px;
+}
+.contact .contact-fl .contact-input .inputs-text  input{
+    width:383px;
+    border:1px solid #b7b7b7;
+    height:30px;
+    padding-left:10px;
+}
+.contact .contact-fl .contact-input .textreas{
+    width:789px;
+    height:170px;
+    float:left;
+}
+.contact .contact-fl .contact-input .textreas p{
+padding-left:10px;
+    line-height:30px;
+}
+.contact .contact-fl .contact-input .textreas textarea{
+    width:790px;
+    height:120px;
+        line-height:24px;
+    padding-left:10px;
+    border:1px solid #b7b7b7;
+    
+}
+.contact .contact-fl .contact-input .con-submit{
+    width:80px; 
+    height:40px;
+    background:#fff;
+    border:4px double #666;
+    color:#666;
+    font-family:'Microsoft YaHei';
+    font-size:18px;
+    cursor:pointer;
+    transition:all 0.5s;
+}
+.contact .contact-fl .contact-input .con-submit:hover{
+    color:#001681;
+    border-color:#001681;
+}
+.contact .contact-fr{
+    width:405px;
+}
+.contact .contact-fr h4{
+    width:353px;
+    font-size:25px;
+    line-height:50px;
+    border-bottom:1px solid #e8e8e8;
+    margin-bottom:25px;
+}
+.contact .contact-fr .adree{
+    width:100%;
+}
+    .contact .contact-fr .adree img {
+        width: 175px;
+        height: 95px;
+        display: block;
+        float: left;
+        padding: 4px;
+        background: #fff;
+        margin-right: 10px;
+    }
+.contact .contact-fr .adree p{
+    line-height:23px;
+}
+.contact .contact-fr .adree p span{
+    color:#ff0000;
+}
+.contact .contact-fr .adree-img{
+    width:353px;
+    padding:4px;
+    background:#fff;
+    margin-top:16px;
+}

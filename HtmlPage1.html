@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style>
+        ul{
+            list-style:none;
+            margin:0;
+            padding:0;
+        }
+        a {
+            width: 100px;
+            color: #fff;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            float: left;
+            position: relative;
+            /*3D视觉*/
+            transform-style: preserve-3d;
+            transition: all 1s linear;
+        }
+            a span {
+                text-align: center;
+                display: block;
+            }
+                a span:first-child {
+                    display:block;
+                    width:100%;
+                    position:absolute;
+                    background: red;
+                    
+                    transform: rotateX(90deg) translateZ(50px);
+                }
+
+                a span:last-child {
+                    background: green;
+                    transform: translateZ(50px);
+                }
+
+        a:hover {
+            background: yellow;
+            transform: rotateX(-90deg);
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transform: rotateZ(30deg);
+        
+           
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <!--<ul>
+        <li><a href="javascript:;"><span>首页</span><span>Home</span></a></li>
+        <li><a href="javascript:;"><span>Designer</span><span>设计师</span></a></li>
+        <li><a href="javascript:;"><span>Project</span><span>项目</span></a></li>
+        <li><a href="javascript:;"><span>Services</span><span>服务</span></a></li>
+        <li><a href="javascript:;"><span>Events</span><span>事件</span></a></li>
+        <li><a href="javascript:;"><span>Experience</span><span>经历</span></a></li>
+        <li><a href="javascript:;"><span>Contact</span><span>联系</span></a></li>
+    </ul>-->
+</body>
+</html>

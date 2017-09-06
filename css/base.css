@@ -1,0 +1,280 @@
+﻿*,body, html, ul, li, ol, input, img, p, dl, dt, dd, h1, h2, h3, h4, h5, h6, form {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei';
+    font-size: 14px;
+    color: #666;
+     box-sizing:border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: normal;
+}
+
+i, em, del {
+    font-style: normal;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #666;
+        text-decoration: none;
+    }
+
+input, textarea {
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.whl-f {
+    float: left;
+}
+
+.whl-r {
+    float: right;
+}
+
+.whl-w {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+
+
+
+        /*底部*/
+        .footer{
+            background:#1f1f1f;
+            height:150px;
+            padding-top:65px;
+        }
+        .footer  .footer-icon{
+            width:171px;
+            margin:0 auto;
+        }
+       .footer  .footer-icon  span{
+           display:block;
+           width:37px;
+           height:37px;
+           float:left;
+           margin-right:20px;
+           background:#fff;
+       }
+       .footer .copy{
+           text-align:center;
+           width:100%;
+           padding-top:25px;
+           line-height:25px;
+           color:#fff;
+       }
+
+
+       /*除了主页其他页面的导航*/
+       /*导航*/
+.nav{
+        width: 100%;
+    height:106px;
+    background:rgba(0,0,0,.5);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9999;
+}
+.nav .logo{
+    margin-left:45px;
+    line-height:106px;
+    font-size:24px;
+}
+.nav .logo a{
+    width:100%;
+     color:#ffcc00;
+}
+.nav  .nav-text ul{
+    margin-right:30px;
+}
+.nav .nav-text li{
+    float:left;
+    line-height:106px;
+    padding:0 20px;
+}
+.nav .nav-text li a{
+    display:block;
+    color:#fff;
+    font-size:18px;
+    position:relative;
+    overflow:hidden; 
+}
+.nav .nav-text li a span{
+    width:100%;
+    text-align:center;
+    display:block;
+}
+.nav .nav-text li a span:first-child{
+    position:absolute;
+    transform:translateX(-100%);
+     transition:all 0.5s linear;
+}
+.nav .nav-text li a span:last-child{
+      transform:translateX(0);
+      transition:all 0.5s linear;
+}
+.nav .nav-text li a:hover span:last-child{
+      transform:translateX(100%);
+      transition:all 0.5s linear;
+}
+.nav .nav-text li a:hover span:first-child{
+    transform:translateX(0);
+}
+/*banner*/
+.banner{
+    overflow:hidden;
+    height:641px;
+    position:relative;
+}
+.banner ul{
+    width:1366px;
+    height:641px;
+    position:relative;
+    background:black;
+}
+    .banner ul li {
+        position:absolute;
+        left:0;
+        top:0;
+        width: 1366px;
+        height: 641px;
+    }
+    .banner ul li a{
+        padding-top:350px;
+        display:block;
+    }
+    .banner ul li a p{
+        color:#fff;
+        line-height:60px;
+        font-size:28px;
+        text-align:right;
+        margin-right:280px;
+        text-shadow:0 0 5px #001681;
+
+    }
+    .banner ul li a p:first-child{
+        opacity:0;
+        transform:translateX(-100%);
+        transition:all 1s 1s;
+    }
+     .banner ul li a.current p:first-child{
+          opacity:1;
+        transform:translateX(0);
+    }
+      .banner ul li a p:last-child{
+        opacity:0;
+        transform:translateX(100%);
+        transition:all 1s 1s;
+    }
+     .banner ul li a.current p:last-child{
+          opacity:1;
+        transform:translateX(0);
+    }
+.banner ul li:nth-child(1){
+    background:url(../images/banner-d3.jpg) no-repeat;
+}
+.banner ul li:nth-child(2){
+
+    background:url(../images/banner-d1.jpg) no-repeat;
+}
+.banner ul li:nth-child(3){
+    background:url(../images/banner-d.jpg) no-repeat;
+    
+}
+
+@keyframes move1{
+    0%{
+        opacity:0;
+        transform:translateX(-100%);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+@keyframes move2{
+    0%{
+        opacity:0;
+        transform:scale(0);
+    }
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+@keyframes move3{
+    0%{
+        opacity:0;
+        transform:scale(0) rotate(0deg);
+    }
+    100%{
+        opacity:1;
+        transform:scale(1) rotate(360deg);
+    }
+}
+
+.banner ol{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:4;
+}
+.banner ol li{
+    width:12px;
+    height:12px;
+    background:#fff;
+    border-radius:50%;
+    margin:0 10px;
+    float:left;
+    cursor:pointer;
+}
+.banner ol li.current{
+    background:#FFCC00;
+}
